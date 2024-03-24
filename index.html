@@ -56,9 +56,9 @@
             .manzana {
             position: relative;
             width: 100%;
-            max-width: 100%; /* Ancho máximo del contenedor */
+            max-width: 800px; /* Ancho máximo del contenedor */
             margin: 0 auto; /* Centra el contenedor */
-            overflow: auto; /* Evita que la imagen sobresalga del contenedor */
+            overflow: hidden; /* Evita que la imagen sobresalga del contenedor */
         }
 
         .uva {
@@ -68,6 +68,7 @@
             /* Ajusta la altura según sea necesario */
             width: 20%; /* El elemento ocupa el 50% del ancho del contenedor padre */
             
+              padding: 2%; /* Relleno del 2% del ancho del contenedor padre */
 
         }
         .pera {
@@ -93,8 +94,8 @@
             width: 20%; /* Ancho de la imagen */
         }    
         .platano {
-            margin-right: 0vw; 
-            margin-left: 0vw; /* Ajusta el margen derecho para dejar espacio para la imagen */
+            margin-right: 0px; 
+            margin-left: 0px; /* Ajusta el margen derecho para dejar espacio para la imagen */
             /* Agrega otros estilos para el contenido central según sea necesario */
         }
         </style>
@@ -123,7 +124,9 @@
         </div>
     <title>Curso de Guitarra Online</title>
     <style>
-        body {
+        body
+        
+        {
             font-family: 'Verdana', sans-serif;
             margin: 3;
             padding: 3;
@@ -170,6 +173,13 @@
             margin-bottom: 10px; /* Espaciado entre cada texto */
             font-weight: bolder; /* Fuente más informal */
         }
+        .rangee {
+            padding: 10px 40px;
+            background-color: #eaeaea8d;
+            background: #5a0a7a7f;
+            text-decoration-color: #fff;
+        }
+       
         .btn {
             display: inline-block;
             padding: 20px 77px;
@@ -194,10 +204,10 @@
 </head>
 <body>
     <div class="manzana">
-        <img src="https://www.nus.agency/wp-content/uploads/2023/03/musica-arte-scaled.jpg" alt="Imagen de uva" class="uva">
+        <script src="script.js"></script>
         <img src="https://img.freepik.com/fotos-premium/pintura-guitarra-palabra-musica-ella_378362-1662.jpg" alt="Imagen de uva" class="pera">
         <img src="https://img.freepik.com/fotos-premium/pintura-guitarra-palabra-musica-ella_378362-1662.jpg" alt="Imagen de uva" class="imagen">
-        <img src="https://www.nus.agency/wp-content/uploads/2023/03/musica-arte-scaled.jpg" alt="Imagen de uva" class="imagen2">
+      
         <div class="platano">
            
                
@@ -223,7 +233,30 @@
         <a href="https://www.youtube.com/watch?v=GRlGFbNAGvY" class="btn" target="_blank">VER CLASE</a>
         <p><i> 1.8 Evaluación Final</i> </p> 
         <a href="https://www.youtube.com/watch?v=GRlGFbNAGvY" class="btn" target="_blank">VER CLASE</a>
-        <h1>Felicidades ya completaste el Modulo</h1>
+        <h1>OBTUVISTE LA CONTRASEÑA?</h1>
+      
+        <p>QUE ESCALA TIENE 5 SOSTENIDOS</p>
+        
+        <form id="loginForm" action="javascript:void(0);">
+            <label for="password">CLAVE:</label>
+            <input type="password" id="password" name="password">
+           
+            <script>
+                function checkPassword() {
+                    var passwordInput = document.getElementById("password").value;
+                    var correctPassword = "si"; // Cambia "contraseña" por tu contraseña real
+        
+                    if (passwordInput === correctPassword) {
+                        // Contraseña correcta, redireccionar al usuario
+                        window.location.href = "https://www.youtube.com/watch?v=GRlGFbNAGvY"; // Cambia "https://www.ejemplo.com" por la URL a la que deseas redireccionar
+                    } else {
+                        alert("Contraseña incorrecta. Inténtalo de nuevo."); // Mostrar un mensaje de error si la contraseña es incorrecta
+                    }
+                }
+            </script>
+            <button type="submit" onclick="checkPassword()">VERIFICAR</button>
+        </form>
+        
         <div id="enlace 1">
             
             <a href="https://www.youtube.com/watch?v=GRlGFbNAGvY" class="btn" target="_blank">Siguiente Modulo</a>           
